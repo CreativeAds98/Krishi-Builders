@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Builders</title>
+
+            <!-- Favicon -->
+    <link href="assets/mini-logo.png" rel="icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+             <img src="assets/logo.png" alt="Krishi Logo" class="logo-img">
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#why-choose-section">Why Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#footer" class="btn-contact">Contact</a></li>
+            </ul>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="video-container">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="assets/video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+              <h1>BUILDING EXCELLENCE</h1>
+            <p>Your Trusted Partner for Residential, Commercial & Industrial Construction</p>
+        </div>
+
+        <a href="#about" class="scroll-down-btn">
+    <span class="mouse">
+        <span class="wheel"></span>
+    </span>
+    <span class="arrow-text">Scroll Down</span>
+    <span class="arrow-icon"></span>
+</a>
+    </div>
+
+
+
+<section class="about-centered-section" id="about">
+    <div class="about-container">
+        
+        <div class="about-header">
+            <span class="eyebrow-text">Welcome to Krishi Builders</span>
+            <h2 class="section-title">Building Trust. Shaping the Future. Since 2016.</h2>
+            
+            <div class="desc-wrapper">
+                <p class="section-desc">
+                    Krishi Builders is your trusted construction partner, delivering end-to-end building solutions across Residential, Commercial, and Industrial sectors. With <strong>100+ completed projects</strong> and a skilled workforce of over <strong>100 professionals</strong>, we bring quality, commitment, and cost-effective engineering to every structure we create.
+                </p>
+                
+                <p class="section-desc">
+                    Your Vision, Built Better. We combine modern engineering, skilled workmanship, and transparent processes to deliver buildings that stand strong for generations.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="build-categories">
+            <h3 class="subsection-title">What We Build</h3>
+            
+            <div class="categories-grid">
+                
+                <div class="cat-item">
+                    <div class="cat-icon">🏠</div>
+                    <h4>Residential</h4>
+                    <p>Premium & Budget Homes,<br>Independent Villas</p>
+                </div>
+
+                <div class="cat-item">
+                    <div class="cat-icon">🏢</div>
+                    <h4>Multi-Unit</h4>
+                    <p>Apartments & Multi-Unit<br>Developments</p>
+                </div>
+
+                <div class="cat-item">
+                    <div class="cat-icon">🏭</div>
+                    <h4>Industrial</h4>
+                    <p>Sheds, Warehouses<br>& Factories</p>
+                </div>
+
+                <div class="cat-item">
+                    <div class="cat-icon">🏗️</div>
+                    <h4>Commercial</h4>
+                    <p>Offices, Retail Outlets<br>& Complexes</p>
+                </div>
+
+            </div>
+
+            <a href="#portfolio" class="cta-button">
+                View Our Portfolio
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="insights-section" id="insights">
+    <div class="insights-container">
+        
+        <div class="insights-video-wrapper">
+            <div class="yellow-decoration"></div>
+            
+            <video autoplay muted loop playsinline class="magazine-video">
+                <source src="assets/video-1.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <div class="insights-content">
+            <h2 class="insights-title">Building Excellence Since 2016</h2>
+            
+            <p class="insights-desc">
+                Established in 2016, Krishi Builders has grown into a trusted construction company known for delivering high-quality, sustainable, and reliable building solutions.
+            </p>
+            
+            <p class="insights-desc">
+                With expertise in handling residential, commercial, and industrial projects, we consistently exceed client expectations through superior craftsmanship and customer-focused service.
+            </p>
+            
+            <a href="#" class="btn-insight">
+                Know More <span class="arrow-circle">→</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="services-animated-section" id="services">
+    <div class="services-container">
+        
+        <div class="section-header fade-in-up">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Complete Construction Solutions Under One Roof</p>
+        </div>
+
+        <div class="services-grid">
+            
+            <div class="service-card scroll-card">
+                <div class="icon-wrapper">
+                    <span class="icon">🏠</span>
+                </div>
+                <h3>Residential<br>Construction</h3>
+                <p class="desc">Building homes designed for comfort, longevity, and aesthetic appeal.</p>
+                <ul class="sub-list">
+                    <li>Independent Houses & Villas</li>
+                    <li>Premium Residences</li>
+                    <li>Budget Homes</li>
+                </ul>
+            </div>
+
+            <div class="service-card scroll-card" style="transition-delay: 200ms;">
+                <div class="icon-wrapper">
+                    <span class="icon">🏭</span>
+                </div>
+                <h3>Industrial<br>Construction</h3>
+                <p class="desc">Scalable and efficient infrastructure for complex industrial operations.</p>
+                <ul class="sub-list">
+                    <li>Factory Buildings</li>
+                    <li>Industrial Sheds</li>
+                    <li>Warehouses</li>
+                </ul>
+            </div>
+
+            <div class="service-card scroll-card" style="transition-delay: 400ms;">
+                <div class="icon-wrapper">
+                    <span class="icon">🏢</span>
+                </div>
+                <h3>Commercial<br>Construction</h3>
+                <p class="desc">Modern spaces designed to help businesses grow and succeed.</p>
+                <ul class="sub-list">
+                    <li>Retail Outlets</li>
+                    <li>Office Spaces</li>
+                    <li>Commercial Complexes</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="why-choose-section" id="why-choose-section">
+    <div class="why-container">
+        
+        <div class="section-header">
+            <h2 class="why-title">Why Choose Krishi Builders?</h2>
+            <div class="title-underline"></div>
+            <p class="why-subtitle">Building trust through quality, transparency, and timely delivery.</p>
+        </div>
+
+        <div class="features-grid">
+            
+            <div class="feature-card">
+                <div class="icon-box">🏗️</div>
+                <h3>Experience You Can Trust</h3>
+                <p>With over <strong>100 completed projects</strong>, we understand the distinct demands of every construction type, ensuring flawless execution from start to finish.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon-box">👷‍♂️</div>
+                <h3>Skilled Workforce</h3>
+                <p>Our team of <strong>100+ experts</strong>—including engineers, supervisors, and technicians—works with dedication and precision to deliver consistent results.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon-box">🧾</div>
+                <h3>Transparent Pricing</h3>
+                <p>We provide competitive pricing without compromising quality. Every estimate is clear, detailed, and honest—<strong>no hidden costs.</strong></p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon-box">🛡️</div>
+                <h3>Quality Assurance</h3>
+                <p>We use only top-grade materials, trusted brands, and modern engineering practices to deliver structures that are built to last generations.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon-box">⏱️</div>
+                <h3>On-Time Delivery</h3>
+                <p>Our systematic planning, detailed execution, and strong project management ensure your project is completed <strong>on schedule, every time.</strong></p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon-box">🤝</div>
+                <h3>Customer Satisfaction</h3>
+                <p>We believe in building long-term relationships through integrity and responsiveness. Your satisfaction is our ultimate measure of success.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="architectural-track-section">
+    <div class="arch-container">
+        
+        <div class="arch-content">
+            <span class="arch-tag">Since 2016</span>
+            <h2 class="arch-title">Our Track Record</h2>
+            <p class="arch-desc">
+                With a diverse portfolio of Residential, Commercial, and Industrial constructions, Krishi Builders has earned the trust of clients across the region.
+            </p>
+
+            <div class="arch-stats-list">
+                
+                <div class="arch-stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-detail">
+                        <h4>Projects Delivered</h4>
+                        <p>Successfully completed across all sectors.</p>
+                    </div>
+                </div>
+
+                <div class="arch-stat-item">
+                    <div class="stat-number">Top</div>
+                    <div class="stat-detail">
+                        <h4>Customer Satisfaction</h4>
+                        <p>Strong relationships built on trust.</p>
+                    </div>
+                </div>
+
+                <div class="arch-stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-detail">
+                        <h4>Quality Excellence</h4>
+                        <p>Consistent execution and safety standards.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="arch-cta-panel">
+            <div class="cta-inner-content">
+                <h2 class="cta-title">Let’s Build Your Dream Project</h2>
+                <p class="cta-text">
+                    Whether you’re planning a home, industrial facility, or commercial space, we are here to turn your vision into reality.
+                </p>
+                
+                <div class="cta-btn-group">
+                    <a href="tel:+919876543210" class="btn-gold">📞 +91 98765 43210</a>
+                    <a href="#contact-form" class="btn-outline">Get a Free Quote →</a>
+                </div>
+            </div>
+            
+            <div class="panel-pattern"></div>
+        </div>
+
+    </div>
+</section>
+
+<section class="reviews-section">
+    <div class="section-header">
+        <h2 class="reviews-title">Client Stories</h2>
+        <p class="reviews-subtitle">Don't just take our word for it. Hear from our happy homeowners and partners.</p>
+    </div>
+
+    <div class="slider-wrapper">
+        <div class="slider-track">
+            
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Krishi Builders made our dream villa a reality. The transparency in pricing and the quality of materials used were exactly what they promised."</p>
+                <div class="client-info">
+                    <div class="client-img">
+                        <span>R</span> 
+                    </div>
+                    <div class="client-details">
+                        <h4>Ramesh Kumar</h4>
+                        <span>Villa Project, Saravanampatti</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"We hired them for our factory shed construction. Their team was professional, adhered to safety standards, and delivered on time."</p>
+                <div class="client-info">
+                    <div class="client-img" style="background: #2c3e50;">
+                        <span>S</span>
+                    </div>
+                    <div class="client-details">
+                        <h4>Senthil Nathan</h4>
+                        <span>Industrial Project, Avinashi Rd</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★☆</div>
+                <p class="review-text">"Excellent craftsmanship on our commercial complex. The project management was systematic, and they handled all approvals smoothly."</p>
+                <div class="client-info">
+                    <div class="client-img" style="background: #e67e22;">
+                        <span>P</span>
+                    </div>
+                    <div class="client-details">
+                        <h4>Priya Menon</h4>
+                        <span>Commercial Complex</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Reliable and honest. They explained every stage of the construction clearly. Highly recommended for first-time home builders."</p>
+                <div class="client-info">
+                    <div class="client-img" style="background: #27ae60;">
+                        <span>A</span>
+                    </div>
+                    <div class="client-details">
+                        <h4>Arun Vijay</h4>
+                        <span>Residential Home</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Krishi Builders made our dream villa a reality. The transparency in pricing and the quality of materials used were exactly what they promised."</p>
+                <div class="client-info">
+                    <div class="client-img"><span>R</span></div>
+                    <div class="client-details">
+                        <h4>Ramesh Kumar</h4>
+                        <span>Villa Project, Saravanampatti</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"We hired them for our factory shed construction. Their team was professional, adhered to safety standards, and delivered on time."</p>
+                <div class="client-info">
+                    <div class="client-img" style="background: #2c3e50;"><span>S</span></div>
+                    <div class="client-details">
+                        <h4>Senthil Nathan</h4>
+                        <span>Industrial Project, Avinashi Rd</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★☆</div>
+                <p class="review-text">"Excellent craftsmanship on our commercial complex. The project management was systematic, and they handled all approvals smoothly."</p>
+                <div class="client-info">
+                    <div class="client-img" style="background: #e67e22;"><span>P</span></div>
+                    <div class="client-details">
+                        <h4>Priya Menon</h4>
+                        <span>Commercial Complex</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Reliable and honest. They explained every stage of the construction clearly. Highly recommended for first-time home builders."</p>
+                <div class="client-info">
+                    <div class="client-img" style="background: #27ae60;"><span>A</span></div>
+                    <div class="client-details">
+                        <h4>Arun Vijay</h4>
+                        <span>Residential Home</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        
+        <div class="footer-col">
+            <a href="#" class="footer-logo">
+                <img src="assets/logo.png" alt="Krishi Builders Logo">
+                Krishi Builders
+            </a>
+            <p class="footer-desc">
+                Your trusted construction partner since 2016. Delivering excellence in residential, commercial, and industrial projects with transparency and integrity.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Projects Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-list">
+                <li>
+                    <span>📍</span>
+                    123, Avinashi Road, <br> Peelamedu, Coimbatore - 641004
+                </li>
+                <li>
+                    <span>📞</span>
+                    +91 98765 43210
+                </li>
+                <li>
+                    <span>✉️</span>
+                    info@krishibuilders.com
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a> 
+                
+                <a href="#" class="social-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a> 
+                
+                <a href="https://www.instagram.com/krishi_builders_constructions" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a> 
+                
+                <a href="#" class="social-icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+            
+            <h3 style="margin-top: 20px;">Newsletter</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button type="submit">→</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Krishi Builders. All Rights Reserved. | Designed with precision.</p>
+    </div>
+</footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+    <script>
+    // Simple Count-Up Animation
+    const statsSection = document.getElementById('statsSection');
+    const counters = document.querySelectorAll('.stat-number');
+    let started = false; // Flag to ensure animation runs only once
+
+    window.addEventListener('scroll', () => {
+        // Check if the stats section is visible in the viewport
+        if (window.scrollY + window.innerHeight > statsSection.offsetTop && !started) {
+            
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target'); // Get the number
+                const increment = target / 100; // Speed of count
+                
+                const updateCount = () => {
+                    const count = +counter.innerText;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 20); // Delay between frames
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+            
+            started = true; // Stop it from running again
+        }
+    });
+</script>
+<script>
+    // Create an Intersection Observer
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2 // Trigger when 20% of the card is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the class that forces opacity: 1 and transform: translateY(0)
+                entry.target.classList.add('visible');
+                // Stop observing once animated
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Target all cards
+    const cards = document.querySelectorAll('.scroll-card');
+    cards.forEach(card => {
+        observer.observe(card);
+    });
+</script>
+
+</body>
+</html>
