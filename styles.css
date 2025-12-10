@@ -554,16 +554,16 @@ p, .section-desc, .sus-desc, .insights-desc {
 
 /* --- INSIGHTS SECTION STYLES --- */
 .insights-section {
-    background-color: #fdfdfd; /* Very light grey/white to blend with video */
+    background-color: #fdfdfd; /* Very light grey/white */
     padding: 100px 50px;
-    overflow: hidden; /* To clip the yellow circle if it gets too big */
+    overflow: hidden;
 }
 
 .insights-container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align to top so video stays with content */
     gap: 80px;
 }
 
@@ -574,102 +574,156 @@ p, .section-desc, .sus-desc, .insights-desc {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky; /* Keeps video in view if text is long */
+    top: 100px; 
 }
 
 /* The Yellow Circle Decoration */
 .yellow-decoration {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     background-color: #f1c40f; /* Gold/Yellow */
     border-radius: 50%;
-    opacity: 0.2; /* Subtle transparency */
-    left: -50px; /* Shifted slightly left */
-    z-index: 0; /* Behind the video */
-    transform: scale(1.2);
+    opacity: 0.15;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0; 
 }
 
 .magazine-video {
     width: 100%;
-    max-width: 500px; /* Controls size of magazine */
-    height: auto;
+    max-width: 500px;
+    border-radius: 8px; /* Added rounded corners for polish */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* Adds depth */
     position: relative;
-    z-index: 1; /* Sits on top of the yellow circle */
-    /* Mix-blend-mode helps the video background blend if it's not perfectly white */
-    mix-blend-mode: multiply; 
+    z-index: 1;
+    mix-blend-mode: normal; /* Changed to normal unless video has white bg */
 }
 
 /* --- Right Side: Content --- */
 .insights-content {
-    flex: 1;
-    color: #000; /* Dark text for light background */
+    flex: 1.2; /* Give text slightly more space */
+    color: #222;
+}
+
+.content-block {
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    color: #f1c40f;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .insights-title {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 20px;
-    color: #000;
+    color: #111;
+    line-height: 1.1;
 }
 
-.insights-desc {
-    font-size: 1.2rem;
-    line-height: 1.6;
+.sub-heading {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 15px;
+    border-left: 4px solid #f1c40f; /* Gold Bar Accent */
+    padding-left: 15px;
+}
+
+.insights-desc, .text-sm {
+    font-size: 1.05rem;
+    line-height: 1.7;
     color: #555;
-    margin-bottom: 30px;
-    max-width: 450px;
+    margin-bottom: 15px;
 }
 
-/* Insight Button Style */
+/* Mission List Styling */
+.mission-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.mission-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.check-icon {
+    color: #f1c40f; /* Gold Checkmark */
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-top: -2px; /* Align visually with text */
+}
+
+/* Button Style */
 .btn-insight {
     text-decoration: none;
-    color: #000;
+    color: #111;
     font-weight: 700;
     font-size: 1rem;
     display: inline-flex;
     align-items: center;
     gap: 15px;
-    transition: gap 0.3s ease;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .arrow-circle {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     background-color: #f1c40f;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    transition: transform 0.3s ease;
-}
-
-.btn-insight:hover {
-    gap: 20px; /* Text moves away slightly */
+    color: #000;
+    transition: transform 0.3s ease, background 0.3s;
 }
 
 .btn-insight:hover .arrow-circle {
     transform: translateX(5px);
+    background-color: #000;
+    color: #f1c40f;
 }
 
 /* --- Responsive --- */
 @media (max-width: 900px) {
     .insights-container {
-        flex-direction: column-reverse; /* Put text on top, video bottom on mobile? */
-        gap: 40px;
-        text-align: center;
+        flex-direction: column; /* Stack vertically */
+        gap: 50px;
+    }
+    
+    .insights-video-wrapper {
+        position: static; /* Disable sticky on mobile */
+        order: -1; /* Ensure video is on top (or remove to put bottom) */
+        width: 100%;
     }
     
     .yellow-decoration {
         left: 50%;
-        transform: translate(-50%, 0); /* Center the blob on mobile */
+        transform: translate(-50%, -50%);
     }
 
-    .insights-desc {
-        margin: 0 auto 30px auto;
+    .insights-title {
+        font-size: 2rem;
     }
 }
-
 
 
 
@@ -1341,6 +1395,7 @@ p, .section-desc, .sus-desc, .insights-desc {
     color: #ccc;
     margin-bottom: 20px;
     line-height: 1.5;
+   
 }
 
 .contact-list span {
